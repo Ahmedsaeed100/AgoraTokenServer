@@ -20,7 +20,8 @@ const nocache = (req, resp, next) => {
       
         resp.header('Access-Control-Allow-Origin', '*');
             // const channelName = req.query.channelName;
-            const channelName = "test";
+            console.log(req.query.channelName)
+            const channelName = req.query.channelName;
         if (!channelName) {
         return resp.status(500).json({ 'error': 'channel is required' });
         }

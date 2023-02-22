@@ -17,7 +17,7 @@ const nocache = (req, resp, next) => {
 
 
   const generateAccessToken = (req, resp) => {
-      
+      // set response header
         resp.header('Access-Control-Allow-Origin', '*');
             // const channelName = req.query.channelName;
             console.log(req.query.channelName)
